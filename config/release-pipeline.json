@@ -1,0 +1,72 @@
+{
+  "releaseName": "Portfolio Technical Demo Release",
+  "version": "1.0.0",
+  "environment": "production",
+  "requestedBy": "Diego Garrido E.",
+  "approvalRequired": true,
+  "stages": [
+    {
+      "name": "Source Control",
+      "category": "governance",
+      "required": true,
+      "status": "PASS",
+      "evidence": "Main branch synchronized and repository available."
+    },
+    {
+      "name": "Build",
+      "category": "quality",
+      "required": true,
+      "status": "PASS",
+      "evidence": "TypeScript build completed successfully."
+    },
+    {
+      "name": "Automated Tests",
+      "category": "quality",
+      "required": true,
+      "status": "PASS",
+      "evidence": "Automated validation completed without blocking errors."
+    },
+    {
+      "name": "Security Check",
+      "category": "security",
+      "required": true,
+      "status": "PASS",
+      "evidence": "No secrets, unsafe environment variables or blocked files detected."
+    },
+    {
+      "name": "Package",
+      "category": "delivery",
+      "required": true,
+      "status": "PASS",
+      "evidence": "Release artifact prepared for deployment."
+    },
+    {
+      "name": "Deploy Staging",
+      "category": "deployment",
+      "required": true,
+      "status": "PASS",
+      "evidence": "Staging deployment validated."
+    },
+    {
+      "name": "Approval Gate",
+      "category": "governance",
+      "required": true,
+      "status": "PASS",
+      "evidence": "Manual approval gate completed."
+    },
+    {
+      "name": "Deploy Production",
+      "category": "deployment",
+      "required": true,
+      "status": "PASS",
+      "evidence": "Production deployment completed."
+    },
+    {
+      "name": "Post-Deploy Validation",
+      "category": "observability",
+      "required": true,
+      "status": "PASS",
+      "evidence": "Production smoke validation completed."
+    }
+  ]
+}
