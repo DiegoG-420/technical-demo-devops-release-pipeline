@@ -148,6 +148,22 @@ Si una etapa requerida falla, el release se bloquea:
       tsconfig.json
       README.md
 
+
+## Integración continua
+
+El repositorio incluye un workflow de GitHub Actions para validar automáticamente el proyecto en cada push o pull request hacia la rama main.
+
+El pipeline ejecuta:
+
+- Instalación limpia de dependencias con npm ci.
+- Build de TypeScript.
+- Evaluación del pipeline de release.
+- Generación de reporte JSON y Markdown como artefactos locales de ejecución.
+
+Archivo del workflow:
+
+    .github/workflows/devops-release-pipeline-ci.yml
+
 ## Estado actual
 
 - Simulador de release funcional.
@@ -187,3 +203,4 @@ Software Engineer enfocado en backend, APIs, automatización, integración, fron
 Portafolio:
 
     https://portfolio.ssitecnologicos.com
+
