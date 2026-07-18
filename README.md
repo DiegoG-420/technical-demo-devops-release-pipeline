@@ -1,5 +1,8 @@
 # Demo Técnica DevOps Release Pipeline
 
+[![DevOps Release Pipeline CI](https://github.com/DiegoG-420/technical-demo-devops-release-pipeline/actions/workflows/devops-release-pipeline-ci.yml/badge.svg)](https://github.com/DiegoG-420/technical-demo-devops-release-pipeline/actions/workflows/devops-release-pipeline-ci.yml)
+
+
 Simulador de pipeline de release empresarial construido con Node.js y TypeScript para evaluar etapas de entrega, validar gates de calidad, seguridad, aprobación y despliegue, y generar reportes en formato JSON y Markdown.
 
 Esta demo forma parte de mi portafolio técnico profesional y muestra un flujo controlado de entrega de software con enfoque en CI/CD, release management, validación operativa y evidencia de despliegue.
@@ -203,4 +206,5 @@ Software Engineer enfocado en backend, APIs, automatización, integración, fron
 Portafolio:
 
     https://portfolio.ssitecnologicos.com
+
 
